@@ -35,7 +35,7 @@ public class followCam : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        target = GameObject.Find("Player").transform;
+        target = GameObject.Find("head").transform;
     }
 
     // Update is called once per frame

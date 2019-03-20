@@ -18,7 +18,7 @@ public class player : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal") * speed;
         Vector2 movement = new Vector2(moveHorizontal, 0);
         rb.AddForce(movement);
-        Rigidbody2D constraints;
+        //Rigidbody2D constraints;
 
        
     }
@@ -46,4 +46,15 @@ public class player : MonoBehaviour
             rb.AddForce(new Vector2(movement.x, jumpForce));
         }
     }
-}
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            isjumping = false;
+
+
+        }
+    }
+    }
