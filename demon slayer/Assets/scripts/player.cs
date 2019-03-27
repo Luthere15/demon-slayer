@@ -44,7 +44,7 @@ public class player : MonoBehaviour
         Vector2 movement = new Vector2(moveHorizontal, 0);
         rb.AddForce(movement);
         legAttack();
-        flip(moveHorizontal);
+        flip(moveHorizontal); 
         jump();
         
 
