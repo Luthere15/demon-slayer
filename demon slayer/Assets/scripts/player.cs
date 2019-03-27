@@ -14,9 +14,14 @@ public class player : MonoBehaviour
 
     private bool facingright;
 
+    private Animator anim;
+    
+
+
     // Use this for initialization
     void Start ()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         float moveHorizontal = Input.GetAxis("Horizontal") * speed;
         Vector2 movement = new Vector2(moveHorizontal, 0);
@@ -38,9 +43,21 @@ public class player : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal") * speed;
         Vector2 movement = new Vector2(moveHorizontal, 0);
         rb.AddForce(movement);
-
+        legAttack();
         flip(moveHorizontal);
         jump();
+        
+
+
+        if (moveHorizontal > 0 || moveHorizontal < 0)
+        {
+            anim.SetBool("isRunning", true);
+          
+        }
+        else
+        {
+            anim.SetBool("isRunning", false);
+        }
     }
 
     void jump()
@@ -63,7 +80,10 @@ public class player : MonoBehaviour
 
             theScale.x *= -1;
             transform.localScale = theScale;
+            
         }
+        
+        
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -76,4 +96,13 @@ public class player : MonoBehaviour
 
         }
     }
+
+    private void legAttack()
+    {
+        if (Input.GetKeyDown(KeyCode.A) && !isjumping )
+        {
+            anim.SetTrigger("legAttack");
+            
+        }
     }
+   }
