@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ground
   - fissure
+  - leftLeg
+  - chickenLeg
+  - chicken
   layers:
   - Default
   - TransparentFX

@@ -15,8 +15,15 @@ public class player : MonoBehaviour
     private bool facingright;
 
     private Animator anim;
-    
 
+    public GameObject chicken;
+
+    private SpriteRenderer damage;
+    public bool showingDamage = false;
+    public float showDamageDuration = 100f;
+    public float damageDoneTime = 5f;
+
+    Rigidbody2D constraints;
 
     // Use this for initialization
     void Start ()
@@ -28,14 +35,20 @@ public class player : MonoBehaviour
         rb.AddForce(movement);
         //Rigidbody2D constraints;
         facingright = true;
+        damage = GetComponent<SpriteRenderer>();
 
+        constraints = GetComponent<Rigidbody2D>();
 
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        
+        if (showingDamage == true && Time.time > damageDoneTime)
+        {
+            unShowDamage();
+            showingDamage = false;
+        }
     }
 
     private void FixedUpdate()
@@ -43,8 +56,8 @@ public class player : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal") * speed;
         Vector2 movement = new Vector2(moveHorizontal, 0);
         rb.AddForce(movement);
-        legAttack();
-        flip(moveHorizontal); 
+       //legAttack();
+       flip(moveHorizontal); 
         jump();
         
 
@@ -58,6 +71,7 @@ public class player : MonoBehaviour
         {
             anim.SetBool("isRunning", false);
         }
+        legAttack();
     }
 
     void jump()
@@ -95,11 +109,37 @@ public class player : MonoBehaviour
 
 
         }
+
+        if (other.gameObject.tag == "fissure")
+        {
+            Destroy(other.gameObject);
+        }
+
+        if (other.gameObject.tag == "fissure" )
+        {
+           
+            showingDamage = true;
+            damage.color = new Color();
+            damage.color = Color.red;
+            constraints.velocity = Vector2.zero;
+            damageDoneTime = Time.time + showDamageDuration;
+
+
+
+        }
+
+    }
+
+    void unShowDamage()
+    {
+        damage.color = Color.white;
+        showingDamage = false;
+
     }
 
     private void legAttack()
     {
-        if (Input.GetKeyDown(KeyCode.A) && !isjumping )
+        if (Input.GetKeyDown(KeyCode.A))// && !isjumping )
         {
             anim.SetTrigger("legAttack");
             
