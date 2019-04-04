@@ -4396,7 +4396,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 6
+  m_Constraints: 4
 --- !u!4 &1378142409
 Transform:
   m_ObjectHideFlags: 0
@@ -4430,12 +4430,10 @@ MonoBehaviour:
   fissure: {fileID: 7633057155037064804, guid: a2d9fcf99119ef04fad40b6efa899bb2, type: 3}
   chicken: {fileID: 0}
   fissureSpeed: 40
-  speed: 1
-  leftAndRightEdge: 1
+  speed: 10
   chanceToChangeDirections: 0.1
   secondsBetweenFissureattack: 5
   target: {fileID: 1966400897}
-  chaseRange: 3
 --- !u!1 &1406729233
 GameObject:
   m_ObjectHideFlags: 0

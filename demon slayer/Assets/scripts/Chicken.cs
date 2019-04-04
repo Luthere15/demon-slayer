@@ -8,15 +8,15 @@ public class Chicken : MonoBehaviour
     public GameObject chicken;
 
     public float fissureSpeed = 40;
-    public float speed = 1f;
-    public float leftAndRightEdge = 1f;
+    public float speed ;
+   
     public float chanceToChangeDirections = 0.1f;
     public float secondsBetweenFissureattack = 5f;
     public static float leftScreen = -10f;
      
 
     public Transform target;
-    public float chaseRange;
+   
 
     private bool facingright;
 
@@ -30,17 +30,18 @@ public class Chicken : MonoBehaviour
         Invoke("tempFire", 2f);
         facingright = false;
         chicken = this.gameObject;
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
     
     // Update is called once per frame
     void Update()
     {
-        Vector2 pos = target.transform.position;
+        
         //pos.x += speed * Time.deltaTime;
         //transform.position = pos;
 
-        
+        transform.position = Vector2.MoveTowards(transform.position, target.transform.position,speed*  Time.deltaTime);
 
 
     }
