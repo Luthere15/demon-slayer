@@ -13,12 +13,16 @@ public class Chicken : MonoBehaviour
     public float chanceToChangeDirections = 0.1f;
     public float secondsBetweenFissureattack = 5f;
     public static float leftScreen = -10f;
-     
+
+    private Animator anim;
 
     public Transform target;
    
 
     private bool facingright;
+
+    private bool attack;
+  
 
 
 
@@ -26,11 +30,13 @@ public class Chicken : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+       
+        anim = GetComponent<Animator>();
         Invoke("tempFire", 2f);
         facingright = false;
         chicken = this.gameObject;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+       
     }
 
     
@@ -42,18 +48,28 @@ public class Chicken : MonoBehaviour
         //transform.position = pos;
         if (Vector3.Distance(transform.position,target.position)> 10)
         {
+            anim.SetBool("findingPlayer", true);
             transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+            //attack = false;
         }
         if (Vector3.Distance(transform.position, target.position) <= 10)
         {
-
+           anim.SetBool("findingPlayer", false);
         }
     }
+     private void resetValues()
+    {
+        attack = false;
+    }
+    
 
     private void FixedUpdate()
     {
         float playerPlace = target.transform.position.x;
         flip(playerPlace);
+        resetValues();
+
+       
     }
     private void flip(float playerPlace)
     {
