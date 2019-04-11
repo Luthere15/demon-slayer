@@ -37,13 +37,17 @@ public class Chicken : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         //pos.x += speed * Time.deltaTime;
         //transform.position = pos;
+        if (Vector3.Distance(transform.position,target.position)> 10)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+        }
+        if (Vector3.Distance(transform.position, target.position) <= 10)
+        {
 
-        transform.position = Vector2.MoveTowards(transform.position, target.transform.position,speed*  Time.deltaTime);
-
-
+        }
     }
 
     private void FixedUpdate()
