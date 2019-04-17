@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
+
     private Vector2 movement;
     public float speed;
     private Rigidbody2D rb;
@@ -112,6 +113,8 @@ public class player : MonoBehaviour
 
         if (other.gameObject.tag == "fissure")
         {
+            
+
             Destroy(other.gameObject);
         }
 
