@@ -228,6 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 61309337}
   - component: {fileID: 61309338}
+  - component: {fileID: 61309340}
   - component: {fileID: 61309339}
   m_Layer: 0
   m_Name: right hand
@@ -324,6 +325,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.69847107, y: 1.0184746}
   m_EdgeRadius: 0
+--- !u!114 &61309340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61309336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3957eb6a49d697b458661dc529a6a79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showingDamage: 0
+  showDamageDuration: 100
+  damageDoneTime: 5
 --- !u!1 &72637476
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,6 +456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 86407605}
   - component: {fileID: 86407604}
+  - component: {fileID: 86407602}
   - component: {fileID: 86407606}
   m_Layer: 0
   m_Name: head
@@ -448,6 +465,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &86407602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86407601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3957eb6a49d697b458661dc529a6a79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showingDamage: 0
+  showDamageDuration: 100
+  damageDoneTime: 5
 --- !u!212 &86407604
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3145,6 +3177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 905612648}
   - component: {fileID: 905612649}
+  - component: {fileID: 905612651}
   - component: {fileID: 905612650}
   m_Layer: 0
   m_Name: right leg
@@ -3241,6 +3274,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6323929, y: 0.97467804}
   m_EdgeRadius: 0
+--- !u!114 &905612651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905612647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3957eb6a49d697b458661dc529a6a79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showingDamage: 0
+  showDamageDuration: 100
+  damageDoneTime: 5
 --- !u!1 &948661704
 GameObject:
   m_ObjectHideFlags: 0
@@ -5761,6 +5809,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1839478420}
   - component: {fileID: 1839478421}
+  - component: {fileID: 1839478424}
   - component: {fileID: 1839478422}
   - component: {fileID: 1839478423}
   m_Layer: 0
@@ -5870,6 +5919,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa76c0ab8d177064aba02ff6d689fbb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1839478424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839478419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3957eb6a49d697b458661dc529a6a79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showingDamage: 0
+  showDamageDuration: 100
+  damageDoneTime: 5
 --- !u!1 &1844049061
 GameObject:
   m_ObjectHideFlags: 0
@@ -6294,7 +6358,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6395,6 +6459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1981825475}
   - component: {fileID: 1981825476}
+  - component: {fileID: 1981825478}
   - component: {fileID: 1981825477}
   m_Layer: 0
   m_Name: left hand
@@ -6491,6 +6556,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.63619995, y: 0.9977188}
   m_EdgeRadius: 0
+--- !u!114 &1981825478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981825474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3957eb6a49d697b458661dc529a6a79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showingDamage: 0
+  showDamageDuration: 100
+  damageDoneTime: 5
 --- !u!1 &2012736075
 GameObject:
   m_ObjectHideFlags: 0
@@ -6580,7 +6660,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2013134464}
   - component: {fileID: 2013134465}
+  - component: {fileID: 2013134468}
   - component: {fileID: 2013134466}
+  - component: {fileID: 2013134467}
   m_Layer: 0
   m_Name: body
   m_TagString: Untagged
@@ -6678,6 +6760,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3026657, y: 1.1731565}
   m_EdgeRadius: 0
+--- !u!114 &2013134467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013134463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3957eb6a49d697b458661dc529a6a79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showingDamage: 0
+  showDamageDuration: 100
+  damageDoneTime: 5
+--- !u!114 &2013134468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013134463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3957eb6a49d697b458661dc529a6a79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showingDamage: 0
+  showDamageDuration: 100
+  damageDoneTime: 5
 --- !u!1 &2026734286
 GameObject:
   m_ObjectHideFlags: 0
