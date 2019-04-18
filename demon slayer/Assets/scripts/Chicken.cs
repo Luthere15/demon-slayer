@@ -92,7 +92,7 @@ public class Chicken : MonoBehaviour
         Rigidbody2D rigidB = attack.GetComponent<Rigidbody2D>();
         if (transform.localScale.x > 0)
         { 
-         attack.transform.position = new Vector2(transform.position.x, 0); 
+         attack.transform.position = new Vector2(transform.position.x, transform.position.y); 
          rigidB.velocity = Vector2.left * fissureSpeed;
         }
         if (transform.localScale.x < 0)
