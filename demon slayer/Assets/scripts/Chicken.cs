@@ -97,7 +97,7 @@ public class Chicken : MonoBehaviour
         }
         if (transform.localScale.x < 0)
         {
-            attack.transform.position = new Vector2(transform.position.x, 0);
+            attack.transform.position = new Vector2(transform.position.x, transform.position.y);
             rigidB.velocity = Vector2.right * fissureSpeed;
         }
 
