@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8309636063059079689}
   - component: {fileID: 8283381190176333579}
   - component: {fileID: 8141923165751535208}
+  - component: {fileID: 6571456258441336372}
   m_Layer: 0
   m_Name: feather
   m_TagString: fissure
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2854227836345363629}
   m_LocalRotation: {x: 0, y: 0, z: -0.5068465, w: 0.86203635}
   m_LocalPosition: {x: 37.9, y: 3.5, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.25, z: 1}
+  m_LocalScale: {x: 0.12810001, y: 0.24, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -115,7 +116,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -6.279652, y: 11.189822}
+  m_Offset: {x: -6.9631505, y: 11.557638}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.9849152, y: 0.01093431}
@@ -126,5 +127,17 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 12.95, y: 22.88}
+  m_Size: {x: 11.148927, y: 22.460682}
   m_EdgeRadius: 0
+--- !u!114 &6571456258441336372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2854227836345363629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb972828fd5e9454da58f25a19fea672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6175417198051208920}
   - component: {fileID: 6175417198051208923}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6175417198760727073}
   - component: {fileID: 6175417198760727072}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bhead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 6175417199076050373}
   - component: {fileID: 6175417199076050375}
   - component: {fileID: 6175417199076050374}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: chicken
   m_TagString: chickenLeg
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 6175417199562528778}
   - component: {fileID: 6175417199562528773}
   - component: {fileID: 6175417199562528772}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BLeftLeg
   m_TagString: chickenLeg
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6175417199821623627}
   - component: {fileID: 6175417199821623626}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BLeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
+    
 
     private Vector2 movement;
     public float speed;
@@ -49,6 +50,11 @@ public class player : MonoBehaviour
         {
             unShowDamage();
             showingDamage = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+           //health.CurrentVal -= 10;
         }
     }
 
