@@ -31,7 +31,7 @@ public class fissureCollision : MonoBehaviour
         {
 
 
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
 
 

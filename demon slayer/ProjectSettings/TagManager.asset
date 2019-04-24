@@ -9,6 +9,7 @@ TagManager:
   - leftLeg
   - chickenLeg
   - chicken
+  - healthbar
   layers:
   - Default
   - TransparentFX

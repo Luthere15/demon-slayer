@@ -21,7 +21,7 @@ public class Chicken : MonoBehaviour
 
     private bool facingright;
 
-    private bool attack;
+    //private bool attack;
   
 
 
@@ -59,7 +59,7 @@ public class Chicken : MonoBehaviour
     }
      private void resetValues()
     {
-        attack = false;
+       // attack = false;
     }
     
 

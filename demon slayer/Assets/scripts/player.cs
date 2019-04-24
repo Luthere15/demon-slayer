@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
-    
+    [SerializeField]
+    private Stat health;
 
     private Vector2 movement;
     public float speed;
@@ -24,9 +25,14 @@ public class player : MonoBehaviour
     public bool showingDamage = false;
     public float showDamageDuration = 100f;
     public float damageDoneTime = 5f;
+    bool hit;
 
     Rigidbody2D constraints;
 
+    private void Awake()
+    {
+        health.Initialize();
+    }
     // Use this for initialization
     void Start ()
     {
@@ -40,6 +46,7 @@ public class player : MonoBehaviour
         damage = GetComponent<SpriteRenderer>();
 
         constraints = GetComponent<Rigidbody2D>();
+        
 
     }
 	
@@ -52,9 +59,14 @@ public class player : MonoBehaviour
             showingDamage = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (hit==true)
         {
-           //health.CurrentVal -= 10;
+           health.CurrentVal -= 10;
+            hit = false;
+        }
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            health.CurrentVal += 10;
         }
     }
 
@@ -122,6 +134,8 @@ public class player : MonoBehaviour
             
 
             Destroy(other.gameObject);
+            hit = true;
+
         }
 
         if (other.gameObject.tag == "fissure" )
