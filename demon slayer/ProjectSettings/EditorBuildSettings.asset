@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/MainMenu.unity
+    guid: e99517bca1213a74fa2c3d455427fde9
+  - enabled: 1
+    path: Assets/Scenes/demonSlayer.unity
+    guid: 9f0daa6dca03f5945b81b6e301655c27
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: e5125958739a73144a22114c0e831566
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: 6bdbc406b55aa324cbb18d0972d5489a
   m_configObjects: {}

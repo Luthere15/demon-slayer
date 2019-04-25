@@ -56,10 +56,12 @@
      <Compile Include="Assets\scripts\BarScript.cs" />
      <Compile Include="Assets\scripts\Chicken.cs" />
      <Compile Include="Assets\scripts\damage.cs" />
+     <Compile Include="Assets\scripts\door.cs" />
      <Compile Include="Assets\scripts\enemyScript.cs" />
      <Compile Include="Assets\scripts\fissureCollision.cs" />
      <Compile Include="Assets\scripts\followCam.cs" />
      <Compile Include="Assets\scripts\legAttack.cs" />
+     <Compile Include="Assets\scripts\MainMenu.cs" />
      <Compile Include="Assets\scripts\plateformCollider.cs" />
      <Compile Include="Assets\scripts\player.cs" />
      <Compile Include="Assets\scripts\Stat.cs" />

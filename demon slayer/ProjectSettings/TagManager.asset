@@ -10,6 +10,7 @@ TagManager:
   - chickenLeg
   - chicken
   - healthbar
+  - door
   layers:
   - Default
   - TransparentFX

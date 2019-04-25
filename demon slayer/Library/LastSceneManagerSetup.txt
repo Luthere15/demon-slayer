@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/demonSlayer.unity
+- path: Assets/Scenes/demonSlayer.unity
   isLoaded: 1
   isActive: 1

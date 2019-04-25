@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
@@ -66,7 +67,12 @@ public class player : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
-            health.CurrentVal += 10;
+           // health.CurrentVal += 10;
+        }
+
+        if(health.CurrentVal == 0)
+        {
+            SceneManager.LoadScene(3);
         }
     }
 
